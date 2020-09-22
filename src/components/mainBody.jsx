@@ -30,11 +30,11 @@ const MainBody = () => {
     <div>
       <div
         id="home"
-        className="title jumbotron jumbotron-fluid bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        className="title back jumbotron jumbotron-fluid bg-transparent text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
         <div id="stars"></div>
         <div className="container container-fluid text-center ">
-          <h1 className="display-1">
+          <h1 className="display-1 titlecolor">
             {FirstName + " " + MiddleName + " " + LastName}
           </h1>
           <Typist className="lead"> {devDesc}</Typist>
@@ -48,7 +48,7 @@ const MainBody = () => {
                 aria-label={`My ${icon.image.split("-")[1]}`}
               >
                 <i
-                  className={`fab ${icon.image}  fa-3x ${hoverstatus[icon.id]}`}
+                  className={`fa ${icon.image}  fa-3x ${hoverstatus[icon.id]}`}
                   onMouseOver={() => toggleHover({ icon, event: "enter" })}
                   onMouseOut={() => toggleHover({ icon, event: "leave" })}
                 />
@@ -57,8 +57,7 @@ const MainBody = () => {
           </div>
           <a
             className="btn btn-outline-light btn-lg"
-            href="#aboutme"
-            role="button"
+            href="https://github.com/marcespinoza/portfolio/raw/master/src/cv/CV-MarceloEspinoza.pdf" target="_blank"
             aria-label="Learn more about me"
           >
             Descargar CV

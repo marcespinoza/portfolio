@@ -46,13 +46,13 @@ import vecinos6 from "../img/vecinos/vecinos6.png"
 class Portfolio extends React.Component {
   render() {
     return (
-      <section id="work" className="portfolio-mf sect-pt4 route">
+      <section id="work" className="portfolio-mf portfolio-back sect-pt4 route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">Portfolio</h3>
-                <p className="subtitle-a">
+                <h3 className="title-a titlecolor">Portfolio</h3>
+                <p className="subtitle-a titlecolor">
                   Incididunt nostrud id aute culpa excepteur pariatur consequat
                   elit culpa nulla enim anim incididunt.
                 </p>
@@ -70,10 +70,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Infullwash</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS
+                            Reserva de turnos para lavadero de autos.
                           </span>
                         </div>
                       </div>
@@ -145,11 +145,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Lecturista App</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
+                            Lectura de medidores a traves de la camara utilizando Text Recognition del kit ML de Firebase.
                           </span>{" "}
                         </div>
                       </div>

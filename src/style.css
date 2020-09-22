@@ -727,7 +727,7 @@ PORTFOLIO
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: #195e83;
 }
 
 .work-content .w-like {
@@ -998,6 +998,16 @@ BUTTON
     bottom: 15px;
   }
 }
+
+.back{
+	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+	background-size: cover;
+	background-position:center;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+};  
 
 .bgstyle {
   /* background: linear-gradient(136deg, #1ad7c0, #8E44AD, #ff9b11, #1F3A93, #ddd8c6, #000000, #000000);  */
@@ -1471,4 +1481,12 @@ BUTTON
 }
 .bg-gradient {
   background: linear-gradient(rgba(245, 245, 245), rgba(245, 245, 245, 0));
+}
+
+.titlecolor{
+  color: #FFF;
+}
+
+.portfolio-back{
+  background: #010504;
 }
