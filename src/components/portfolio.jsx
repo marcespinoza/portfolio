@@ -48,6 +48,13 @@ import sube2 from "../img/sube_movil/sube2.jpg"
 import sube3 from "../img/sube_movil/sube3.jpg"
 import sube4 from "../img/sube_movil/sube4.jpg"
 
+import sem1 from "../img/sem/sem1.jpg"
+
+import dron1 from "../img/dron/dron1.jpg"
+import dron2 from "../img/dron/dron2.jpg"
+import dron3 from "../img/dron/dron3.jpg"
+import dron4 from "../img/dron/dron4.jpg"
+
 class Portfolio extends React.Component {
   render() {
     return (
@@ -56,10 +63,9 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a titlecolor">Portfolio</h3>
+                <h3 className="title-a titlecolor">Proyectos</h3>
                 <p className="subtitle-a titlecolor">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                  
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -90,6 +96,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/Infullwhas"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={full2}
                   data-lightbox="gallery-vmarine"
@@ -165,6 +179,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/LecturistaApp"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={lect2}
                   data-lightbox="gallery-aguadeluz"
@@ -226,6 +248,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/Usoft_EstadosCuenta"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={estado2}
                   data-lightbox="gallery-todo"
@@ -263,7 +293,7 @@ class Portfolio extends React.Component {
                         <div className="w-more">
                           <span className="w-ctegory">
                             App para uson interno de la red de panaderias Casapan, que permite
-                            realizar pedidos a la casa central
+                            realizar pedidos a la casa central.
                           </span>
                         </div>
                       </div>
@@ -275,6 +305,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/Casapan"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={casapan2}
                   data-lightbox="gallery-medlingos"
@@ -328,9 +366,9 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">USOFT - Pedidos</h2>
                         <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
+                          <span className="w-ctegory"></span>
                         </div>
                       </div>
                       <div className="col-sm-4">
@@ -341,6 +379,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/USoftPedidos"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={pedidos2}
                   data-lightbox="gallery-smth"
@@ -380,10 +426,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Vecinos App</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
+                            App para la Municipalidad de Resistencia Chaco que permite a los vecinos solicitar lo servicios públicos.
                           </span>
                         </div>
                       </div>
@@ -395,6 +441,14 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div class="work-content">
+                <a
+                  href="https://github.com/marcespinoza/vecinos_municipalidadResistencia"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
                 <a
                   href={vecinos2}
                   data-lightbox="gallery-mf"
@@ -434,17 +488,17 @@ class Portfolio extends React.Component {
             </div> 
             <div className="col-md-4">
               <div className="work-box">
-                <a href={sube4} data-lightbox="gallery-mf">
+                <a href={sube3} data-lightbox="gallery-mf">
                   <div className="work-img">
-                    <img src={sube4} alt="" className="img-fluid" />
+                    <img src={sube3} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Sube Móvil</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
+                            Puntos de ventas y recargas de la tarjeta SUBE.
                           </span>
                         </div>
                       </div>
@@ -460,45 +514,122 @@ class Portfolio extends React.Component {
                 <div className="repo-left-stat">
                  <span>
                    <ion-icon name="logo-google-playstore"></ion-icon>
-                 <div>Ver en Play Store</div>
+                 <a href="https://play.google.com/store/apps/details?id=com.sube.movil" target="_blank">Ver en Play Store</a>
                 </span>
                </div>
               </div>
                 <a
-                  href={vecinos2}
+                  href={sube1}
                   data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={vecinos3}
+                  href={sube2}
                   data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={vecinos4}
+                  href={sube4}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div> 
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={sem1} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={sem1} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Sem Control</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            App con funciones adicionales a la aplicacion oficial del Estacionamiento medido en Formosa.
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="repo-card-div">
+                <div className="repo-left-stat">
+                 <span>
+                   <ion-icon name="logo-google-playstore"></ion-icon>
+                 <a href="https://play.google.com/store/apps/details?id=com.sem.control" target="_blank">Ver en Play Store</a>
+                </span>
+               </div>
+              </div>
+                
+              </div>
+            </div> 
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={dron1} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={dron1} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Formosa en dron</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            Galeria de imagenes de Formosa para descargar y/o compartir.
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="repo-card-div">
+                <div className="repo-left-stat">
+                 <span>
+                   <ion-icon name="logo-google-playstore"></ion-icon>
+                 <a href="https://play.google.com/store/apps/details?id=com.fsa.en.dron" target="_blank">Ver en Play Store</a>
+                </span>
+               </div>
+              </div>
+                <a
+                  href={dron2}
                   data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={vecinos5}
+                  href={dron3}
                   data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={vecinos6}
+                  href={dron4}
                   data-lightbox="gallery-mf"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
+                
               </div>
             </div> 
           </div>

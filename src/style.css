@@ -1484,7 +1484,11 @@ BUTTON
 }
 
 .titlecolor{
-  color: #FFF;
+  color: #000;
+}
+
+.titlecolorblanco{
+  color: #fff;
 }
 
 .portfolio-back{
