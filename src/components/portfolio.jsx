@@ -43,6 +43,11 @@ import vecinos4 from "../img/vecinos/vecinos4.png"
 import vecinos5 from "../img/vecinos/vecinos5.png"
 import vecinos6 from "../img/vecinos/vecinos6.png"
 
+import sube1 from "../img/sube_movil/sube1.jpg"
+import sube2 from "../img/sube_movil/sube2.jpg"
+import sube3 from "../img/sube_movil/sube3.jpg"
+import sube4 from "../img/sube_movil/sube4.jpg"
+
 class Portfolio extends React.Component {
   render() {
     return (
@@ -206,10 +211,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">USOFT - Estado de cuenta</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
+                            
                           </span>
                         </div>
                       </div>
@@ -254,10 +259,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Casapan</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
+                            App para uson interno de la red de panaderias Casapan, que permite
+                            realizar pedidos a la casa central
                           </span>
                         </div>
                       </div>
@@ -389,6 +395,75 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <a
+                  href={vecinos2}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={vecinos3}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={vecinos4}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={vecinos5}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={vecinos6}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div> 
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={sube4} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={sube4} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            HTML5 CSS3 Bootstrap MERN
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="repo-card-div">
+                <div className="repo-left-stat">
+                 <span>
+                   <ion-icon name="logo-google-playstore"></ion-icon>
+                 <div>Ver en Play Store</div>
+                </span>
+               </div>
+              </div>
                 <a
                   href={vecinos2}
                   data-lightbox="gallery-mf"

@@ -7,6 +7,8 @@ import './animate.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './img/icons/css/ionicons.css';
 import './img/font-awesome/css/font-awesome.css';
+import './img/font-awesome/css/fontawesome.css';
+
 import 'lightbox2/dist/css/lightbox.min.css'
 import './style.css';
 
