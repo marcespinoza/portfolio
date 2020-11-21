@@ -717,6 +717,18 @@ PORTFOLIO
   transition: all 1s;
 }
 
+.repoinfo{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 3% 1rem 4%;
+  align-items: 'center';
+    justify-content: 'center';
+}
+
+.languagesinfo{
+  padding: 0rem 0% 0rem 4%;
+}
+
 .work-content {
   padding: 2rem 3% 1rem 4%;
 }

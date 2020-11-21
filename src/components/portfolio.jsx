@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import axios from "axios";
+
+
 
 //import lectt
 import full1 from "../img//fullwasah/full1.png";
@@ -55,8 +58,57 @@ import dron2 from "../img/dron/dron2.jpg"
 import dron3 from "../img/dron/dron3.jpg"
 import dron4 from "../img/dron/dron4.jpg"
 
-class Portfolio extends React.Component {
-  render() {
+import id1 from "../img/idgroup/id1.jpg"
+import id2 from "../img/idgroup/id2.jpg"
+import id3 from "../img/idgroup/id3.jpg"
+import id4 from "../img/idgroup/id4.jpg"
+
+import natura1 from "../img/natura/natura1.jpg"
+import natura2 from "../img/natura/natura2.jpg"
+import natura3 from "../img/natura/natura3.jpg"
+import natura4 from "../img/natura/natura4.jpg"
+
+function Portfolio (props)  {
+
+  const Language = ({ languages_url, repo_url }) => {
+    const [data, setData] = useState([]);
+    const handleRequest = useCallback(async () => {
+      try {
+        const response = await axios.get("https://api.github.com/repos/marcespinoza/"+repo_url+"/languages");
+        return setData(response.data);
+      } catch (error) {
+        console.error(error.message);
+      }
+    }, [languages_url]);
+    useEffect(() => {
+      handleRequest();
+    }, [handleRequest]);
+    const array = [];
+    let total_count = 0;
+    for (let index in data) {
+      array.push(index);
+      total_count += data[index];
+    }
+    return (
+      <div >
+        
+        {array.length
+          ? array.map((language) => (
+              <a
+                key={language} 
+                className="badge badge-light card-link"
+                href={repo_url + `/search?l=${language}`}
+                target=" _blank"
+              >
+                {language}:{" "}
+                {Math.trunc((data[language] / total_count) * 1000) / 10} %
+              </a>
+            ))
+          : "code yet to be deployed."}
+      </div>
+    );
+  };
+
     return (
       <section id="work" className="portfolio-mf portfolio-back sect-pt4 route">
         <div className="container">
@@ -72,6 +124,134 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
+          <div className="col-md-4">
+              <div className="work-box">
+                <a href={id1} data-lightbox="gallery-vmarine">
+                  <div className="work-img">
+                    <img src={id1} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">ID Group</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            Estados de cuentas de clientes de los desarrollos inmobilialiarios pertenecientes al grupo de inversion IDGroup.
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="repoinfo">
+                  <div>
+                <a
+                  href="https://github.com/marcespinoza/idgroup_app"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"idgroup_app"} />
+               </a>
+               </div>
+               </div>
+                <a
+                  href={id2}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={id3}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={id4}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                
+              </div>
+            </div>
+          <div className="col-md-4">
+              <div className="work-box">
+                <a href={natura1} data-lightbox="gallery-vmarine">
+                  <div className="work-img">
+                    <img src={natura1} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">Natura (En desarrollo)</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                           Catalogo de productos de consultoras Natura.
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="repoinfo">
+                  <div>
+                <a
+                  href="https://github.com/marcespinoza/Natura_formosa"
+                  target=" _blank"
+                  className="btn btn-outline-secondary" >
+                <ion-icon name="logo-github"></ion-icon> Repo
+               </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"Natura_formosa"} />
+               </a>
+               </div>
+               </div>
+                <a
+                  href={natura2}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={natura3}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={natura4}
+                  data-lightbox="gallery-vmarine"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              
+              </div>
+            </div>
             <div className="col-md-4">
               <div className="work-box">
                 <a href={full1} data-lightbox="gallery-vmarine">
@@ -96,13 +276,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
-                  href="https://github.com/marcespinoza/Infullwhas"
+                  href="https://github.com/marcespinoza/infullwhas"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"infullwhas"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={full2}
@@ -179,13 +367,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
                   href="https://github.com/marcespinoza/LecturistaApp"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"LecturistaApp"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={lect2}
@@ -248,13 +444,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
                   href="https://github.com/marcespinoza/Usoft_EstadosCuenta"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"Usoft_EstadosCuenta"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={estado2}
@@ -305,13 +509,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
-                  href="https://github.com/marcespinoza/Casapan"
+                  href="https://github.com/marcespinoza/casapan"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"casapan"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={casapan2}
@@ -379,13 +591,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
                   href="https://github.com/marcespinoza/USoftPedidos"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"USoftPedidos"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={pedidos2}
@@ -441,13 +661,21 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <div class="work-content">
+                <div className="repoinfo">
+                  <div>
                 <a
                   href="https://github.com/marcespinoza/vecinos_municipalidadResistencia"
                   target=" _blank"
                   className="btn btn-outline-secondary" >
                 <ion-icon name="logo-github"></ion-icon> Repo
                </a>
+               </div>
+               <div className="languagesinfo">
+                <a
+                  className="btn btn-outline-secondary" >
+                <Language repo_url={"vecinos_municipalidadResistencia"} />
+               </a>
+               </div>
                </div>
                 <a
                   href={vecinos2}
@@ -636,7 +864,7 @@ class Portfolio extends React.Component {
         </div>
       </section>
     );
-  }
+  
 }
 
 export default Portfolio;
