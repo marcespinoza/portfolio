@@ -473,7 +473,7 @@ NAVBAR
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #81bcff;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -1504,7 +1504,7 @@ BUTTON
 }
 
 .portfolio-back{
-  background: rgb(241, 241, 241)
+  background: rgb(71, 71, 71);;
 }
 
 .repo-card-div {

@@ -77,8 +77,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top navbar-dark bg-dark"
         id="mainNav"
+        data-bs-theme="dark"
       >
         <div className="container">
           <button
